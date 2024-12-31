@@ -11,16 +11,35 @@ nav {
   display: flex;
   font-size: 24px;
   width: 100%;
-  gap: 40%;
-  justify-content: center;
-  padding: 20px;
-  padding-left: 8px;
-  position: fixed;
+  gap: 150px;
+  justify-content: space-around;
+  padding: 20px 0;
 }
 
-a {
-  text-decoration: none;
+#navbar {
+  position: fixed;
+  top: 0;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+}
+
+#navbar a {
   color: #000;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.scrolled #navbar a {
+  color: #fff;
+}
+
+.scrolled {
+  background-color: #808080;
+  color: #fff;
+}
+
+.scrolled #navbar a {
+  color: blue;
 }
 
 /* Food */
@@ -63,6 +82,11 @@ figcaption {
 
 .pagination .button {
   padding: 15px;
+}
+
+.pagination a {
+  color: #000;
+  text-decoration: none;
 }
 
 .pagination .button:hover {
@@ -133,6 +157,11 @@ h2 {
 
 .footer-a p {
   margin: 10px 0;
+}
+
+p a {
+  color: #000;
+  text-decoration: none;
 }
 
 .footer-b {
