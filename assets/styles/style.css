@@ -23,14 +23,20 @@ nav {
   z-index: 1000;
 }
 
+p a {
+  color: #000;
+  text-decoration: none;
+}
+
+.pagination a {
+  color: #000;
+  text-decoration: none;
+}
+
 #navbar a {
   color: #000;
   text-decoration: none;
   transition: color 0.3s;
-}
-
-.scrolled #navbar a {
-  color: #fff;
 }
 
 .scrolled {
@@ -82,11 +88,6 @@ figcaption {
 
 .pagination .button {
   padding: 15px;
-}
-
-.pagination a {
-  color: #000;
-  text-decoration: none;
 }
 
 .pagination .button:hover {
