@@ -1,9 +1,9 @@
-const nav = document.getElementById("navbar");
+const navbar = document.getElementById('navbar')
 
-window.addEventListener("scroll", () => {
+window.addEventListener('scroll', () => {
   if (window.scrollY > 50) {
-    navbar.classList.add("scrolled");
+    navbar.classList.add('scrolled')
   } else {
-    navbar.classList.remove("scrolled");
+    navbar.classList.remove('scrolled')
   }
-});
+})
